@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Stats } from '$lib/stats.svelte.js';
 
 	let { data } = $props();
@@ -44,7 +45,11 @@
 
 	{#if question.image_url}
 		<div style="display: flex; justify-content: center; align-items: center;">
-			<img src={question.image_url} alt="TBA" style="max-width: 256px; margin: 1rem auto;" />
+			<img
+				src="{base}{question.image_url}"
+				alt="TBA"
+				style="max-width: 256px; margin: 1rem auto;"
+			/>
 		</div>
 	{/if}
 

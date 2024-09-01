@@ -1,18 +1,32 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
+	import { goto } from '$app/navigation';
+	import type { SubmitFunction } from './$types.js';
 
 	let { data } = $props();
 
-	$inspect(data);
+	const _enhance: SubmitFunction = async ({ formData, cancel, action }) => {
+		console.log('🚀 ~ const_enhance:SubmitFunction= ~ action:', action);
+
+		switch (action.search) {
+			case '?/collection':
+				return goto('/fragen/' + formData.get('bundesland'));
+			case '?/quiz':
+				return goto('/fragen/' + formData.get('bundesland') + '/1');
+		}
+		cancel();
+	};
 </script>
 
 <p>
-	Esse dolore <mark>occaecat irure sunt non voluptate quis aliquip.</mark> Exercitation nostrud enim
-	incididunt in sit tempor veniam. Magna ipsum exercitation occaecat do esse proident velit adipisicing
-	qui fugiat. Officia quis ipsum enim sunt consequat est ex aliquip aliqua proident amet quis sit minim.
+	Bessere <sub>meiner Meinung nach</sub> UI und UX für die Einbürgerungstest Fragenkatalog.
+	<br />
+	Alle Inhalte stammen von <a href="https://oet.bamf.de/ords/oetut/f?p=514:1"></a>
+	<br />
+	Warum nur NRW?
 </p>
 
-<form method="post" use:enhance>
+<form method="post" use:enhance={_enhance}>
 	<h4>Wählen Sie zunächst bitte Ihr Bundesland:</h4>
 
 	<select name="bundesland">

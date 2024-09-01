@@ -9,11 +9,17 @@
 	<slot />
 </main>
 
-<footer>
-	Alle Fragen und Antworten stammen von <a href="https://oet.bamf.de/ords/oetut/f?p=514:1">
-		<code>https://oet.bamf.de/ords/oetut/f?p=514:1</code>
-	</a>
-	und sind das Copyright gehört den Bundesamt für Migration und Flüchtlinge.
+<footer class="py-3">
+	<div>
+		Alle Fragen und Antworten stammen von <a href="https://oet.bamf.de/ords/oetut/f?p=514:1">
+			<code>https://oet.bamf.de/ords/oetut/f?p=514:1</code>
+		</a>
+		und sind das Copyright gehört den Bundesamt für Migration und Flüchtlinge.
+	</div>
+	<div>
+		<a href="https://mastermakrela.com">Ich</a>
+		habe nur bessere UI/UX gebaut ;)
+	</div>
 </footer>
 
 <noscript>

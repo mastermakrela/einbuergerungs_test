@@ -1,7 +1,10 @@
 import { error } from '@sveltejs/kit';
 import type { LayoutLoad } from './$types';
 
-export const load = (async ({ params, parent, url }) => {
+export const ssr = false;
+export const prerender = false;
+
+export const load = (async ({ params, parent }) => {
 	const { questions } = await parent();
 	const { question_id } = params;
 
@@ -11,10 +14,11 @@ export const load = (async ({ params, parent, url }) => {
 		error(404, 'Frage nicht gefunden');
 	}
 
-	const answer = parseInt(url.searchParams.get('answer') ?? '');
+	// this is for SSR but now we deploy to GH pages
+	// const answer = parseInt(url.searchParams.get('answer') ?? '');
 
 	return {
 		question,
-		selected_answer: isNaN(answer) ? undefined : answer
+		selected_answer: undefined as number | undefined // isNaN(answer) ? undefined : answer
 	};
 }) satisfies LayoutLoad;

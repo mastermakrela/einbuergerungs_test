@@ -87,7 +87,7 @@
 			<span style="color: var(--pico-form-element-invalid-border-color);">falsch</span>
 		{/if}
 		geantwortet am
-		{stats.lastUpdated.toLocaleString()}
+		{stats.lastUpdated.toLocaleString('de-DE')}
 	</small>
 {/if}
 

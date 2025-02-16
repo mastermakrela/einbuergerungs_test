@@ -18,7 +18,7 @@
 	function on_keypress(e: KeyboardEvent) {
 		const _keys = ['a', 's', 'd', 'f'];
 
-		selected_answer = _keys.indexOf(e.key);
+		selected_answer = _keys.indexOf(e.key.toLowerCase());
 		if (selected_answer === -1) selected_answer = undefined;
 
 		update_answer();

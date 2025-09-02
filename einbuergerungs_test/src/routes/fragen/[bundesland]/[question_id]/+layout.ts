@@ -1,8 +1,7 @@
 import { error } from '@sveltejs/kit';
 import type { LayoutLoad } from './$types';
 
-export const ssr = false;
-export const prerender = false;
+export const prerender = true;
 
 export const load = (async ({ params, parent }) => {
 	const { questions } = await parent();

@@ -8,8 +8,6 @@
 
 	let selected_answer = $state(data.selected_answer);
 	let show_correct = $derived(selected_answer !== undefined);
-	$inspect(selected_answer);
-
 	$effect(() => {
 		selected_answer = data.selected_answer;
 	});

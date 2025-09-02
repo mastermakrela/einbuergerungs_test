@@ -8,6 +8,7 @@
 
 	let selected_answer = $state(data.selected_answer);
 	let show_correct = $derived(selected_answer !== undefined);
+	$inspect(selected_answer);
 
 	$effect(() => {
 		selected_answer = data.selected_answer;
@@ -63,7 +64,10 @@
 					name="answer"
 					value={idx}
 					checked={selected_answer === idx}
-					onchange={(e) => update_answer()}
+					onchange={(e) => {
+						selected_answer = idx;
+						update_answer();
+					}}
 					aria-invalid={show_correct ? !answer.correct : undefined}
 				/>
 				<label

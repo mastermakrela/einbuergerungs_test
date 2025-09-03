@@ -57,6 +57,7 @@
 			<div
 				style="display: grid; grid-template-columns: min-content 1fr min-content; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;"
 			>
+				<!-- svelte-ignore a11y_role_supports_aria_props_implicit -->
 				<input
 					type="radio"
 					name="answer"

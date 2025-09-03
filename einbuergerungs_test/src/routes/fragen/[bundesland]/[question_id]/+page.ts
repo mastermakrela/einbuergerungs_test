@@ -1,6 +1,6 @@
 import questions from '$lib/nrw_questions.json';
 
-export const prerender = true;
+export const prerender = false;
 
 export const entries = () => {
 	const entries = [];

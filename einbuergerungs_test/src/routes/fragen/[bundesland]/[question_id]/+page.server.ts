@@ -10,4 +10,4 @@ export const entries: EntryGenerator = () => {
 	});
 };
 
-export const prerender = true;
+export const prerender = false;

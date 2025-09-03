@@ -1,8 +1,6 @@
 import questions from '$lib/nrw_questions.json';
 import type { LayoutServerLoad } from './$types';
 
-export const ssr = false;
-
 type Questions = typeof questions;
 
 export const load = (async () => {

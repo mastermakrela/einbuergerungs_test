@@ -4,7 +4,7 @@
 		"questions": [
 			{
 				"id": 1,
-				"question": "In Deutschland dürfen Menschen offen etwas gegen die Regierungsagen, weil ...",
+				"question": "In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil ...",
 				"answers": [
 					{ "correct": false, "text": "hier Religionsfreiheit gilt." },
 					{ "correct": false, "text": "die Menschen Steuern zahlen." },
@@ -14,7 +14,7 @@
 			},
 			{
 				"id": 2,
-				"question": "In Deutschland können Eltern bis zum 14. Lebensjahr ihres Kindesentscheiden, ob es in der Schule am ...",
+				"question": "In Deutschland können Eltern bis zum 14. Lebensjahr ihres Kindes entscheiden, ob es in der Schule am ...",
 				"answers": [
 					{ "correct": false, "text": "Geschichtsunterricht teilnimmt." },
 					{ "correct": true, "text": "Religionsunterricht teilnimmt." },
@@ -37,7 +37,7 @@
 			},
 			{
 				"id": 4,
-				"question": "Weiches Recht gehört zu den Grundrechten in Deutschland?",
+				"question": "Welches Recht gehört zu den Grundrechten in Deutschland?",
 				"answers": [
 					{ "correct": false, "text": "Waffenbesitz" },
 					{ "correct": false, "text": "Faustrecht" },
@@ -76,7 +76,7 @@
 			},
 			{
 				"id": 7,
-				"question": "Welches Recht gehört zu den Grundrechten, die nach derdeutschen Verfassung garantiert werden? Das Recht auf ...",
+				"question": "Welches Recht gehört zu den Grundrechten, die nach der deutschen Verfassung garantiert werden? Das Recht auf ...",
 				"answers": [
 					{ "correct": true, "text": "Glaubens- und Gewissensfreiheit." },
 					{ "correct": false, "text": "Unterhaltung." },
@@ -96,7 +96,7 @@
 			},
 			{
 				"id": 9,
-				"question": "Weiches Grundrecht gilt in Deutschland nur für Ausländer /Ausländerinnen? Das Grundrecht auf ...",
+				"question": "Welches Grundrecht gilt in Deutschland nur für Ausländer /Ausländerinnen? Das Grundrecht auf ...",
 				"answers": [
 					{ "correct": false, "text": "Schutz der Familie" },
 					{ "correct": false, "text": "Menschenwürde" },
@@ -213,7 +213,7 @@
 			},
 			{
 				"id": 18,
-				"question": "Weiches Grundrecht ist in Artikel 1 des Grundgesetzes derBundesrepublik Deutschland garantiert?",
+				"question": "Welches Grundrecht ist in Artikel 1 des Grundgesetzes derBundesrepublik Deutschland garantiert?",
 				"answers": [
 					{ "correct": true, "text": "die Unantastbarkeit der Menschenwürde" },
 					{ "correct": false, "text": "das Recht auf Leben" },
@@ -246,7 +246,7 @@
 			},
 			{
 				"id": 21,
-				"question": "Weiches ist das Wappen der Bundesrepublik Deutschland?",
+				"question": "Welches ist das Wappen der Bundesrepublik Deutschland?",
 				"answers": [
 					{ "correct": true, "text": "1" },
 					{ "correct": false, "text": "2" },
@@ -287,7 +287,7 @@
 			},
 			{
 				"id": 25,
-				"question": "Was ist kein Bundesfand der Bundesrepublik Deutschland?",
+				"question": "Was ist kein Bundesland der Bundesrepublik Deutschland?",
 				"answers": [
 					{ "correct": true, "text": "Elsass-Lothringen" },
 					{ "correct": false, "text": "Nordrhein-Westfalen" },
@@ -327,7 +327,7 @@
 			},
 			{
 				"id": 29,
-				"question": "Weiches Tier ist das Wappentier der Bundesrepublik Deutschland?",
+				"question": "Welches Tier ist das Wappentier der Bundesrepublik Deutschland?",
 				"answers": [
 					{ "correct": false, "text": "Löwe" },
 					{ "correct": true, "text": "Adler" },
@@ -347,7 +347,7 @@
 			},
 			{
 				"id": 31,
-				"question": "Die Zusammenarbeit von Parteien zur Bildung einer Regierungnennt man in Deutschland ...",
+				"question": "Die Zusammenarbeit von Parteien zur Bildung einer Regierung nennt man in Deutschland ...",
 				"answers": [
 					{ "correct": false, "text": "Einheit." },
 					{ "correct": true, "text": "Koalition." },
@@ -367,7 +367,7 @@
 			},
 			{
 				"id": 33,
-				"question": "Weiche Aussage ist richtig ? In Deutschland ...",
+				"question": "Welche Aussage ist richtig ? In Deutschland ...",
 				"answers": [
 					{
 						"correct": true,
@@ -400,7 +400,7 @@
 			},
 			{
 				"id": 36,
-				"question": "Weiche Maßnahme schafft in Deutschland soziale Sicherheit ?",
+				"question": "Welche Maßnahme schafft in Deutschland soziale Sicherheit ?",
 				"answers": [
 					{ "correct": true, "text": "die Krankenversicherung" },
 					{ "correct": false, "text": "die Autoversicherung" },
@@ -420,7 +420,7 @@
 			},
 			{
 				"id": 38,
-				"question": "Die Bundesrepublik Deutschland ist ein demokratischer undsozialer ...",
+				"question": "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer ...",
 				"answers": [
 					{ "correct": false, "text": "Staatenverbund." },
 					{ "correct": true, "text": "Bundesstaat." },
@@ -440,7 +440,7 @@
 			},
 			{
 				"id": 40,
-				"question": "Mit weichen Worten beginnt die deutsche Nationalhymne ?",
+				"question": "Mit welchen Worten beginnt die deutsche Nationalhymne ?",
 				"answers": [
 					{ "correct": false, "text": "Völker, hört die Signale ..." },
 					{ "correct": true, "text": "Einigkeit und Recht und Freiheit ..." },
@@ -493,7 +493,7 @@
 			},
 			{
 				"id": 45,
-				"question": "Zu weicher Versicherung gehört die Pflegeversicherung ?",
+				"question": "Zu welcher Versicherung gehört die Pflegeversicherung ?",
 				"answers": [
 					{ "correct": true, "text": "Sozialversicherung" },
 					{ "correct": false, "text": "Unfallversicherung" },
@@ -526,7 +526,7 @@
 			},
 			{
 				"id": 48,
-				"question": "Weiches Organ gehört nicht zu den VerfassungsorganenDeutschlands?",
+				"question": "Welches Organ gehört nicht zu den VerfassungsorganenDeutschlands?",
 				"answers": [
 					{ "correct": false, "text": "der Bundesrat" },
 					{ "correct": false, "text": "der Bundespräsident / die Bundespräsidentin" },
@@ -599,7 +599,7 @@
 			},
 			{
 				"id": 55,
-				"question": "<A Zt IrJa",
+				"question": "Was zeigt dieses Bild ?",
 				"answers": [
 					{ "correct": true, "text": "den Bundestagssitz in Berlin" },
 					{ "correct": false, "text": "das Bundesverfassungsgericht in Karlsruhe" },
@@ -649,7 +649,7 @@
 			},
 			{
 				"id": 59,
-				"question": "Weiche Parteien wurden in Deutschland 2007 zur Partei „DieLinke“?",
+				"question": "Welche Parteien wurden in Deutschland 2007 zur Partei „DieLinke“?",
 				"answers": [
 					{ "correct": false, "text": "CDU und SSW" },
 					{ "correct": true, "text": "PDS und WASG" },
@@ -878,7 +878,7 @@
 			},
 			{
 				"id": 80,
-				"question": "Weiches Gericht in Deutschland ist zuständig für die Auslegungdes Grundgesetzes?",
+				"question": "Welches Gericht in Deutschland ist zuständig für die Auslegungdes Grundgesetzes?",
 				"answers": [
 					{ "correct": false, "text": "Oberlandesgericht" },
 					{ "correct": false, "text": "Amtsgericht" },
@@ -918,7 +918,7 @@
 			},
 			{
 				"id": 84,
-				"question": "Weiche Hauptaufgabe hat der deutsche Bundespräsident / diedeutsche Bundespräsidentin? Er/ Sie ...",
+				"question": "Welche Hauptaufgabe hat der deutsche Bundespräsident / diedeutsche Bundespräsidentin? Er/ Sie ...",
 				"answers": [
 					{ "correct": false, "text": "regiert das Land." },
 					{ "correct": false, "text": "entwirft die Gesetze." },
@@ -1033,7 +1033,7 @@
 			},
 			{
 				"id": 94,
-				"question": "Ab weichem Alter darf man in Deutschland an der Wahl zumDeutschen Bundestag teilnehmen?",
+				"question": "Ab welchem Alter darf man in Deutschland an der Wahl zumDeutschen Bundestag teilnehmen?",
 				"answers": [
 					{ "correct": false, "text": "16" },
 					{ "correct": true, "text": "18" },
@@ -1367,7 +1367,7 @@
 			},
 			{
 				"id": 122,
-				"question": "Weichem Grundsatz unterliegen Wahlen in Deutschland ? Wahlen inDeutschland sind ...",
+				"question": "Welchem Grundsatz unterliegen Wahlen in Deutschland ? Wahlen inDeutschland sind ...",
 				"answers": [
 					{ "correct": true, "text": "frei, gleich, geheim." },
 					{ "correct": false, "text": "offen, sicher, frei." },
@@ -1557,7 +1557,7 @@
 			},
 			{
 				"id": 137,
-				"question": "Weiches Gericht ist in Deutschland bei Konflikten in der Arbeitsweltzuständig?",
+				"question": "Welches Gericht ist in Deutschland bei Konflikten in der Arbeitsweltzuständig?",
 				"answers": [
 					{ "correct": false, "text": "das Familiengericht" },
 					{ "correct": false, "text": "das Strafgericht" },
@@ -1646,7 +1646,7 @@
 			},
 			{
 				"id": 145,
-				"question": "In Deutschland wird die Staatsgewalt geteilt. Für weiche Staatsgewaltarbeitet ein Richter / eine Richterin? Für die ...",
+				"question": "In Deutschland wird die Staatsgewalt geteilt. Für welche Staatsgewaltarbeitet ein Richter / eine Richterin? Für die ...",
 				"answers": [
 					{ "correct": true, "text": "Judikative" },
 					{ "correct": false, "text": "Exekutive" },
@@ -1768,7 +1768,7 @@
 			},
 			{
 				"id": 156,
-				"question": "In weichem Jahr wurde Hitler Reichskanzier ?",
+				"question": "In welchem Jahr wurde Hitler Reichskanzier ?",
 				"answers": [
 					{ "correct": false, "text": "1923" },
 					{ "correct": false, "text": "1927" },
@@ -1808,7 +1808,7 @@
 			},
 			{
 				"id": 160,
-				"question": "Weicher Krieg dauerte von 1939 bis 19457",
+				"question": "Welcher Krieg dauerte von 1939 bis 19457",
 				"answers": [
 					{ "correct": false, "text": "der Erste Weltkrieg" },
 					{ "correct": true, "text": "der Zweite Weltkrieg" },
@@ -1838,7 +1838,7 @@
 			},
 			{
 				"id": 163,
-				"question": "In weichem Jahr zerstörten die Nationalsozialisten Synagogen undjüdische Geschäfte in Deutschland?",
+				"question": "In welchem Jahr zerstörten die Nationalsozialisten Synagogen undjüdische Geschäfte in Deutschland?",
 				"answers": [
 					{ "correct": false, "text": "1925" },
 					{ "correct": false, "text": "1930" },
@@ -1893,7 +1893,7 @@
 			},
 			{
 				"id": 167,
-				"question": "Weiche Länder wurden nach dem Zweiten Weltkrieg in Deutschlandals „Allüerte Besatzungsmächte“ bezeichnet?",
+				"question": "Welche Länder wurden nach dem Zweiten Weltkrieg in Deutschlandals „Allüerte Besatzungsmächte“ bezeichnet?",
 				"answers": [
 					{ "correct": false, "text": "Sowjetunion, Großbritannien, Polen, Schweden" },
 					{ "correct": false, "text": "Frankreich, Sowjetunion, Italien, Japan" },
@@ -1903,7 +1903,7 @@
 			},
 			{
 				"id": 168,
-				"question": "Weiches Land war keine „Alliierte Besatzungsmacht“ inDeutschland?",
+				"question": "Welches Land war keine „Alliierte Besatzungsmacht“ inDeutschland?",
 				"answers": [
 					{ "correct": false, "text": "USA" },
 					{ "correct": false, "text": "Sowjetunion" },
@@ -1949,7 +1949,7 @@
 			},
 			{
 				"id": 172,
-				"question": "In weicher Besatzungszone wurde die DDR gegründet? In der ...",
+				"question": "In welcher Besatzungszone wurde die DDR gegründet? In der ...",
 				"answers": [
 					{ "correct": false, "text": "amerikanischen Besatzungszone" },
 					{ "correct": false, "text": "französischen Besatzungszone" },
@@ -1996,11 +1996,11 @@
 					{ "correct": true, "text": "1=Großbritannien, 2=Sowjetunion, 3=USA, 4=Frankreich" },
 					{ "correct": false, "text": "1=Großbritannien, 2=USA, 3=Sowjetunion, 4=Frankreich" }
 				],
-				"image_url": "/bilder/fragen/nrw/175.png"
+				"image_url": "/bilder/fragen/nrw/176.png"
 			},
 			{
 				"id": 177,
-				"question": "Weiche deutsche Stadt wurde nach dem Zweiten Weltkrieg in vierSektoren aufgeteilt?",
+				"question": "Welche deutsche Stadt wurde nach dem Zweiten Weltkrieg in vierSektoren aufgeteilt?",
 				"answers": [
 					{ "correct": false, "text": "München" },
 					{ "correct": true, "text": "Berlin" },
@@ -2063,7 +2063,7 @@
 			},
 			{
 				"id": 182,
-				"question": "Weiche Parteien wurden 1946 zwangsweise zur SED vereint, derEinheitspartei der späteren DDR?",
+				"question": "Welche Parteien wurden 1946 zwangsweise zur SED vereint, derEinheitspartei der späteren DDR?",
 				"answers": [
 					{ "correct": true, "text": "KPD und SPD" },
 					{ "correct": false, "text": "SPD und CDU" },
@@ -2125,7 +2125,7 @@
 			},
 			{
 				"id": 187,
-				"question": "Weicher deutsche Staat hatte eine schwarz -rot-goldene Flagge mitHammer, Zirkel und Ährenkranz?7Aznvr",
+				"question": "Welcher deutsche Staat hatte eine schwarz -rot-goldene Flagge mitHammer, Zirkel und Ährenkranz?7Aznvr",
 				"answers": [
 					{ "correct": false, "text": "Preußen" },
 					{ "correct": false, "text": "Bundesrepublik Deutschland" },
@@ -2136,7 +2136,7 @@
 			},
 			{
 				"id": 188,
-				"question": "In weichem Jahr wurde die Mauer in Berlin gebaut ?",
+				"question": "In welchem Jahr wurde die Mauer in Berlin gebaut ?",
 				"answers": [
 					{ "correct": false, "text": "1953" },
 					{ "correct": false, "text": "1956" },
@@ -2266,7 +2266,7 @@
 			},
 			{
 				"id": 201,
-				"question": "Weiche der folgenden Auflistungen enthält nur Bundesländer, diezum Gebiet der früheren DDR gehörten?",
+				"question": "Welche der folgenden Auflistungen enthält nur Bundesländer, diezum Gebiet der früheren DDR gehörten?",
 				"answers": [
 					{
 						"correct": false,
@@ -2344,7 +2344,7 @@
 			},
 			{
 				"id": 207,
-				"question": "In weichem Militärbündnis war die DDR Mitglied 7?",
+				"question": "In welchem Militärbündnis war die DDR Mitglied 7?",
 				"answers": [
 					{ "correct": false, "text": "in der NATO" },
 					{ "correct": false, "text": "im Rheinbund" },
@@ -2415,7 +2415,7 @@
 			},
 			{
 				"id": 214,
-				"question": "Weiche Farben hat die deutsche Flagge?",
+				"question": "Welche Farben hat die deutsche Flagge?",
 				"answers": [
 					{ "correct": true, "text": "schwarz-rot-gold" },
 					{ "correct": false, "text": "rot-weiß-schwarz" },
@@ -2502,7 +2502,7 @@
 			},
 			{
 				"id": 222,
-				"question": "Weiches Land ist ein Nachbarland von Deutschland?",
+				"question": "Welches Land ist ein Nachbarland von Deutschland?",
 				"answers": [
 					{ "correct": false, "text": "Ungarn" },
 					{ "correct": false, "text": "Portugal" },
@@ -2512,7 +2512,7 @@
 			},
 			{
 				"id": 223,
-				"question": "Weiches Land ist ein Nachbarland von Deutschland?",
+				"question": "Welches Land ist ein Nachbarland von Deutschland?",
 				"answers": [
 					{ "correct": false, "text": "Rumänien" },
 					{ "correct": false, "text": "Bulgarien" },
@@ -2532,7 +2532,7 @@
 			},
 			{
 				"id": 225,
-				"question": "In weichem anderen Land gibt es eine große deutschsprachigeBevölkerung?",
+				"question": "In welchem anderen Land gibt es eine große deutschsprachigeBevölkerung?",
 				"answers": [
 					{ "correct": false, "text": "Tschechien" },
 					{ "correct": false, "text": "Norwegen" },
@@ -2542,7 +2542,7 @@
 			},
 			{
 				"id": 226,
-				"question": "Weiche ist die Flagge der Europäischen Union?JA",
+				"question": "Welche ist die Flagge der Europäischen Union?JA",
 				"answers": [
 					{ "correct": false, "text": "1" },
 					{ "correct": true, "text": "2" },
@@ -2553,7 +2553,7 @@
 			},
 			{
 				"id": 227,
-				"question": "Weiches Land ist ein Nachbarland von Deutschland?",
+				"question": "Welches Land ist ein Nachbarland von Deutschland?",
 				"answers": [
 					{ "correct": false, "text": "Finnland" },
 					{ "correct": true, "text": "Dänemark" },
@@ -2573,7 +2573,7 @@
 			},
 			{
 				"id": 229,
-				"question": "Weiches Land ist ein Nachbarland von Deutschland?",
+				"question": "Welches Land ist ein Nachbarland von Deutschland?",
 				"answers": [
 					{ "correct": false, "text": "Spanien" },
 					{ "correct": false, "text": "Bulgarien" },
@@ -2616,7 +2616,7 @@
 			},
 			{
 				"id": 233,
-				"question": "Weiches Land ist ein Nachbarland von Deutschland?",
+				"question": "Welches Land ist ein Nachbarland von Deutschland?",
 				"answers": [
 					{ "correct": true, "text": "Tschechien" },
 					{ "correct": false, "text": "Bulgarien" },
@@ -2667,7 +2667,7 @@
 			},
 			{
 				"id": 238,
-				"question": "An weichen Orten arbeitet das Europäische Parlament?",
+				"question": "An welchen Orten arbeitet das Europäische Parlament?",
 				"answers": [
 					{ "correct": false, "text": "Paris, London und Den Haag" },
 					{ "correct": true, "text": "Straßburg, Luxemburg und Brüssel" },
@@ -2677,7 +2677,7 @@
 			},
 			{
 				"id": 239,
-				"question": "Durch weiche Verträge schloss sich die BundesrepublikDeutschland mit anderen Staaten zur EuropäischenWirtschaftsgemeinschaft zusammen?",
+				"question": "Durch welche Verträge schloss sich die BundesrepublikDeutschland mit anderen Staaten zur EuropäischenWirtschaftsgemeinschaft zusammen?",
 				"answers": [
 					{ "correct": false, "text": "durch die \"Hamburger Verträge\"" },
 					{ "correct": true, "text": "durch die \"Römischen Verträge\"" },
@@ -2739,7 +2739,7 @@
 			},
 			{
 				"id": 244,
-				"question": "Weichen Schulabschluss braucht man normalerweise, um an einerUniversität in Deutschland ein Studium zu beginnen?",
+				"question": "Welchen Schulabschluss braucht man normalerweise, um an einerUniversität in Deutschland ein Studium zu beginnen?",
 				"answers": [
 					{ "correct": true, "text": "das Abitur" },
 					{ "correct": false, "text": "ein Diplom" },
@@ -2759,7 +2759,7 @@
 			},
 			{
 				"id": 246,
-				"question": "Ab weichem Alter ist man in Deutschland volljährig ?",
+				"question": "Ab welchem Alter ist man in Deutschland volljährig ?",
 				"answers": [
 					{ "correct": false, "text": "16" },
 					{ "correct": true, "text": "18" },
@@ -2972,7 +2972,7 @@
 			},
 			{
 				"id": 264,
-				"question": "Zu weichem Fest tragen Menschen in Deutschland bunte Kostümeund Masken?",
+				"question": "Zu welchem Fest tragen Menschen in Deutschland bunte Kostümeund Masken?",
 				"answers": [
 					{ "correct": true, "text": "am Rosenmontag" },
 					{ "correct": false, "text": "am Maifeiertag" },
@@ -3070,7 +3070,7 @@
 			},
 			{
 				"id": 272,
-				"question": "Weiche Lebensform ist in Deutschland nicht erlaubt ?",
+				"question": "Welche Lebensform ist in Deutschland nicht erlaubt ?",
 				"answers": [
 					{
 						"correct": false,
@@ -3231,7 +3231,7 @@
 			},
 			{
 				"id": 286,
-				"question": "Weiche Organisation in einer Firma hilft den Arbeitnehmern undArbeitnehmerinnen bei Problemen mit dem Arbeitgeber / derArbeitgeberin?",
+				"question": "Welche Organisation in einer Firma hilft den Arbeitnehmern undArbeitnehmerinnen bei Problemen mit dem Arbeitgeber / derArbeitgeberin?",
 				"answers": [
 					{ "correct": true, "text": "der Betriebsrat" },
 					{ "correct": false, "text": "der Betriebsprüfer / die Betriebsprüferin" },
@@ -3350,7 +3350,7 @@
 			},
 			{
 				"id": 297,
-				"question": "Aus weichem Land sind die meisten Migranten / Migrantinnen nachDeutschland gekommen?",
+				"question": "Aus welchem Land sind die meisten Migranten / Migrantinnen nachDeutschland gekommen?",
 				"answers": [
 					{ "correct": false, "text": "Italien" },
 					{ "correct": false, "text": "Polen" },
@@ -3380,7 +3380,7 @@
 			},
 			{
 				"id": 300,
-				"question": "Aus weichem Land kamen die ersten Gastarbeiter /Gastarbeiterinnen in die Bundesrepublik Deutschland?",
+				"question": "Aus welchem Land kamen die ersten Gastarbeiter /Gastarbeiterinnen in die Bundesrepublik Deutschland?",
 				"answers": [
 					{ "correct": true, "text": "Italien" },
 					{ "correct": false, "text": "Spanien" },
@@ -3390,7 +3390,7 @@
 			},
 			{
 				"id": 301,
-				"question": "Weiches Wappen gehört zum Bundesland Nordrhein-Westfalen?©Ca\\ ]DIR1 2 3 4",
+				"question": "Welches Wappen gehört zum Bundesland Nordrhein-Westfalen?©Ca\\ ]DIR1 2 3 4",
 				"answers": [
 					{ "correct": false, "text": "1" },
 					{ "correct": true, "text": "2" },
@@ -3421,7 +3421,7 @@
 			},
 			{
 				"id": 304,
-				"question": "Ab weichem Alter darf man in Nordrhein -Westfalen beiKommunalwahlen wählen?",
+				"question": "Ab welchem Alter darf man in Nordrhein -Westfalen beiKommunalwahlen wählen?",
 				"answers": [
 					{ "correct": false, "text": "14" },
 					{ "correct": true, "text": "16" },
@@ -3431,7 +3431,7 @@
 			},
 			{
 				"id": 305,
-				"question": "Weiche Farben hat die Landesflagge von Nordrhein-Westfalen?",
+				"question": "Welche Farben hat die Landesflagge von Nordrhein-Westfalen?",
 				"answers": [
 					{ "correct": false, "text": "rot-weiß" },
 					{ "correct": true, "text": "grün-weiß-rot" },
@@ -3461,7 +3461,7 @@
 			},
 			{
 				"id": 308,
-				"question": "Weiches Bundesland ist Nordrhein-Westfalen?",
+				"question": "Welches Bundesland ist Nordrhein-Westfalen?",
 				"answers": [
 					{ "correct": false, "text": "1" },
 					{ "correct": false, "text": "2" },
@@ -3482,7 +3482,7 @@
 			},
 			{
 				"id": 310,
-				"question": "Weichen Minister / weiche Ministerin hat Nordrhein-Westfalennicht?",
+				"question": "Welchen Minister / welche Ministerin hat Nordrhein-Westfalennicht?",
 				"answers": [
 					{ "correct": false, "text": "Justizminister/ Justizministerin" },
 					{ "correct": true, "text": "Außenminister/ Außenministerin" },

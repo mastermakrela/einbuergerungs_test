@@ -8,7 +8,6 @@
 
 	let selected_answer = $state(data.selected_answer);
 	let show_correct = $derived(selected_answer !== undefined);
-
 	$effect(() => {
 		selected_answer = data.selected_answer;
 	});
@@ -58,12 +57,16 @@
 			<div
 				style="display: grid; grid-template-columns: min-content 1fr min-content; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;"
 			>
+				<!-- svelte-ignore a11y_role_supports_aria_props_implicit -->
 				<input
 					type="radio"
 					name="answer"
 					value={idx}
 					checked={selected_answer === idx}
-					onchange={(e) => update_answer()}
+					onchange={(e) => {
+						selected_answer = idx;
+						update_answer();
+					}}
 					aria-invalid={show_correct ? !answer.correct : undefined}
 				/>
 				<label

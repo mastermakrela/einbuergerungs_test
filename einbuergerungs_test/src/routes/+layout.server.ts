@@ -1,6 +1,7 @@
 import questions from '$lib/nrw_questions.json';
 import type { LayoutServerLoad } from './$types';
 
+export const prerender = true;
 export const ssr = false;
 
 type Questions = typeof questions;

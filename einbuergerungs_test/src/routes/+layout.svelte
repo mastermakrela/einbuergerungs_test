@@ -22,7 +22,7 @@
 		Alle Fragen und Antworten stammen von <a href="https://oet.bamf.de/ords/oetut/f?p=514:1">
 			<code>https://oet.bamf.de/ords/oetut/f?p=514:1</code>
 		</a>
-		und das Copyright gehört den Bundesamt für Migration und Flüchtlinge.
+		und dem Copyright gehört den Bundesamt für Migration und Flüchtlinge.
 	</div>
 	<div>
 		<a href="https://mastermakrela.com">Ich</a>

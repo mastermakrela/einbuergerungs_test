@@ -1,3 +1,11 @@
+<script lang="ts">
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
+</script>
+
 <main>
 	<div>
 		<hgroup>
@@ -6,7 +14,7 @@
 		</hgroup>
 	</div>
 
-	<slot />
+	{@render children?.()}
 </main>
 
 <footer class="py-3">

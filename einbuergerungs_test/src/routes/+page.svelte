@@ -1,3 +1,5 @@
+<!-- @migration-task Error while migrating Svelte code: Unexpected token
+https://svelte.dev/e/js_parse_error -->
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { goto } from '$app/navigation';
@@ -8,8 +10,6 @@
 
 	const _enhance: SubmitFunction = async ({ formData, cancel, action }) => {
 		cancel();
-
-		console.log('🚀 ~ const_enhance:SubmitFunction= ~ action:', action);
 
 		switch (action.search) {
 			case '?/collection':

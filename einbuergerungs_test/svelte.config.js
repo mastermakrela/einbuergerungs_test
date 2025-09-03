@@ -21,10 +21,6 @@ const config = {
 
 		paths: {
 			base: process.argv.includes('dev') ? '/einbuergerungs_test' : process.env.BASE_PATH
-		},
-
-		prerender: {
-			handleHttpError: 'warn'
 		}
 	}
 };

@@ -1,15 +1,17 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	let { data, children } = $props();
 </script>
 
 <nav>
 	<span>
 		Fragen für
-		<a href="/fragen/{data.bundesland}" style="text-decoration: none;">
+		<a href="{base}/fragen/{data.bundesland}" style="text-decoration: none;">
 			{data.bundesland}
 		</a>
 	</span>
-	<a href="/" style="display: flex;">
+	<a href={base} style="display: flex;">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"

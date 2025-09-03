@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Stats } from '$lib/stats.svelte.js';
 
 	let { data } = $props();
@@ -36,7 +37,7 @@
 					{question.id}
 					{#if question.image_url}🎆{/if}
 				</td>
-				<td><a href="/fragen/{data.bundesland}/{idx + 1}">{question.question}</a></td>
+				<td><a href="{base}/fragen/{data.bundesland}/{idx + 1}">{question.question}</a></td>
 				<td>
 					{#if _stats}
 						<small>

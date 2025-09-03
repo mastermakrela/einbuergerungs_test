@@ -1,20 +1,22 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import type { SubmitFunction } from './$types.js';
 
 	let { data } = $props();
 
 	const _enhance: SubmitFunction = async ({ formData, cancel, action }) => {
+		cancel();
+
 		console.log('🚀 ~ const_enhance:SubmitFunction= ~ action:', action);
 
 		switch (action.search) {
 			case '?/collection':
-				return goto('/fragen/' + formData.get('bundesland'));
+				return goto(base + '/fragen/' + formData.get('bundesland'));
 			case '?/quiz':
-				return goto('/fragen/' + formData.get('bundesland') + '/1');
+				return goto(base + '/fragen/' + formData.get('bundesland') + '/1');
 		}
-		cancel();
 	};
 </script>
 

@@ -3,12 +3,14 @@
  * Copyright 2019-2024 - Licensed under MIT
  */
 :root {
-	--pico-font-family-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-		'Noto Color Emoji';
-	--pico-font-family-sans-serif: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, Helvetica,
-		Arial, 'Helvetica Neue', sans-serif, var(--pico-font-family-emoji);
-	--pico-font-family-monospace: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas,
-		'Liberation Mono', monospace, var(--pico-font-family-emoji);
+	--pico-font-family-emoji:
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	--pico-font-family-sans-serif:
+		system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, 'Helvetica Neue',
+		sans-serif, var(--pico-font-family-emoji);
+	--pico-font-family-monospace:
+		ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace,
+		var(--pico-font-family-emoji);
 	--pico-font-family: var(--pico-font-family-sans-serif);
 	--pico-line-height: 1.5;
 	--pico-font-weight: 400;
@@ -130,13 +132,13 @@ kbd {
 }
 :where(select, textarea),
 input:not(
-		[type='submit'],
-		[type='button'],
-		[type='reset'],
-		[type='checkbox'],
-		[type='radio'],
-		[type='file']
-	) {
+	[type='submit'],
+	[type='button'],
+	[type='reset'],
+	[type='checkbox'],
+	[type='radio'],
+	[type='file']
+) {
 	--pico-outline-width: 0.0625rem;
 }
 [type='search'] {
@@ -211,7 +213,8 @@ details summary[role='button']::after {
 	--pico-contrast-hover-underline: var(--pico-secondary-hover);
 	--pico-contrast-focus: rgba(93, 107, 137, 0.25);
 	--pico-contrast-inverse: #fff;
-	--pico-box-shadow: 0.0145rem 0.029rem 0.174rem rgba(129, 145, 181, 0.01698),
+	--pico-box-shadow:
+		0.0145rem 0.029rem 0.174rem rgba(129, 145, 181, 0.01698),
 		0.0335rem 0.067rem 0.402rem rgba(129, 145, 181, 0.024),
 		0.0625rem 0.125rem 0.75rem rgba(129, 145, 181, 0.03),
 		0.1125rem 0.225rem 1.35rem rgba(129, 145, 181, 0.036),
@@ -336,7 +339,8 @@ details summary[role='button']::after {
 		--pico-contrast-hover-underline: var(--pico-contrast-hover);
 		--pico-contrast-focus: rgba(207, 213, 226, 0.25);
 		--pico-contrast-inverse: #000;
-		--pico-box-shadow: 0.0145rem 0.029rem 0.174rem rgba(7, 9, 12, 0.01698),
+		--pico-box-shadow:
+			0.0145rem 0.029rem 0.174rem rgba(7, 9, 12, 0.01698),
 			0.0335rem 0.067rem 0.402rem rgba(7, 9, 12, 0.024),
 			0.0625rem 0.125rem 0.75rem rgba(7, 9, 12, 0.03),
 			0.1125rem 0.225rem 1.35rem rgba(7, 9, 12, 0.036),
@@ -452,7 +456,8 @@ details summary[role='button']::after {
 	--pico-contrast-hover-underline: var(--pico-contrast-hover);
 	--pico-contrast-focus: rgba(207, 213, 226, 0.25);
 	--pico-contrast-inverse: #000;
-	--pico-box-shadow: 0.0145rem 0.029rem 0.174rem rgba(7, 9, 12, 0.01698),
+	--pico-box-shadow:
+		0.0145rem 0.029rem 0.174rem rgba(7, 9, 12, 0.01698),
 		0.0335rem 0.067rem 0.402rem rgba(7, 9, 12, 0.024),
 		0.0625rem 0.125rem 0.75rem rgba(7, 9, 12, 0.03),
 		0.1125rem 0.225rem 1.35rem rgba(7, 9, 12, 0.036),
@@ -780,11 +785,11 @@ del {
 		-webkit-text-decoration var(--pico-transition);
 }
 :where(a:not([role='button'])):is(
-		[aria-current]:not([aria-current='false']),
-		:hover,
-		:active,
-		:focus
-	),
+	[aria-current]:not([aria-current='false']),
+	:hover,
+	:active,
+	:focus
+),
 [role='link']:is([aria-current]:not([aria-current='false']), :hover, :active, :focus) {
 	--pico-color: var(--pico-primary-hover);
 	--pico-underline: var(--pico-primary-hover-underline);
@@ -870,7 +875,8 @@ button:is([aria-current]:not([aria-current='false'])) {
 [type='submit']:is([aria-current]:not([aria-current='false'])):focus,
 button:focus,
 button:is([aria-current]:not([aria-current='false'])):focus {
-	--pico-box-shadow: var(--pico-button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
+	--pico-box-shadow:
+		var(--pico-button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
 		0 0 0 var(--pico-outline-width) var(--pico-primary-focus);
 }
 [type='button'],
@@ -898,7 +904,8 @@ button:is([aria-current]:not([aria-current='false'])):focus {
 }
 [type='file']::file-selector-button:focus,
 [type='reset']:focus {
-	--pico-box-shadow: var(--pico-button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
+	--pico-box-shadow:
+		var(--pico-button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
 		0 0 0 var(--pico-outline-width) var(--pico-secondary-focus);
 }
 :where(button, [type='submit'], [type='reset'], [type='button'], [role='button'])[disabled],
@@ -1535,7 +1542,8 @@ input:not([type='checkbox'], [type='radio'], [type='range'], [type='file'])[type
 	--pico-border-color: var(--pico-secondary-hover-border);
 }
 [type='file']:focus::file-selector-button {
-	--pico-box-shadow: var(--pico-button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
+	--pico-box-shadow:
+		var(--pico-button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
 		0 0 0 var(--pico-outline-width) var(--pico-secondary-focus);
 }
 [type='range'] {
@@ -1874,17 +1882,17 @@ article > footer {
 }
 @supports selector(:has(*)) {
 	[role='group']:has(
-			button:focus,
-			[type='submit']:focus,
-			[type='button']:focus,
-			[role='button']:focus
-		),
+		button:focus,
+		[type='submit']:focus,
+		[type='button']:focus,
+		[role='button']:focus
+	),
 	[role='search']:has(
-			button:focus,
-			[type='submit']:focus,
-			[type='button']:focus,
-			[role='button']:focus
-		) {
+		button:focus,
+		[type='submit']:focus,
+		[type='button']:focus,
+		[role='button']:focus
+	) {
 		--pico-group-box-shadow: var(--pico-group-box-shadow-focus-with-button);
 	}
 	[role='group']:has(

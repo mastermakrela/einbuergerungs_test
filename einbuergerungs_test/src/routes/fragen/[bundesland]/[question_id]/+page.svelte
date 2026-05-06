@@ -2,17 +2,14 @@
 https://svelte.dev/e/js_parse_error -->
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { Stats } from '$lib/stats.svelte.js';
+	import { Stats } from '$lib/stats.svelte';
 
 	let { data } = $props();
 
 	let { questions, question } = $derived(data);
 
-	let selected_answer = $state(data.selected_answer);
+	let selected_answer = $derived(data.selected_answer);
 	let show_correct = $derived(selected_answer !== undefined);
-	$effect(() => {
-		selected_answer = data.selected_answer;
-	});
 
 	let stats = $derived(Stats.getAnswer(data.bundesland, question.id));
 

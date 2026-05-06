@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { Stats } from '$lib/stats.svelte.js';
+	import { Stats } from '$lib/stats.svelte';
 
 	let { data } = $props();
 

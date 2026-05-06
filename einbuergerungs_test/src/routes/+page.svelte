@@ -4,7 +4,7 @@ https://svelte.dev/e/js_parse_error -->
 	import { enhance } from '$app/forms';
 	import { goto } from '$app/navigation';
 	import { base } from '$app/paths';
-	import type { SubmitFunction } from './$types.js';
+	import type { SubmitFunction } from '@sveltejs/kit';
 
 	let { data } = $props();
 

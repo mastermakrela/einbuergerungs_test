@@ -1,14 +1,18 @@
 import { browser } from '$app/environment';
 
 class _Stats {
-	#answers: Record<string, { correct: boolean; lastUpdated: Date }> = $state({});
+	#answers: Record<string, { correct: boolean; lastUpdated: Date }>;
 
 	constructor() {
 		if (browser) {
 			const storedAnswers = localStorage.getItem('answers');
 			if (storedAnswers) {
 				this.#answers = JSON.parse(storedAnswers);
+			} else {
+				this.#answers = {};
 			}
+		} else {
+			this.#answers = {};
 		}
 	}
 
@@ -16,7 +20,7 @@ class _Stats {
 		const combinedKey = `${key}-${number}`;
 		this.#answers[combinedKey] = { correct, lastUpdated: new Date() };
 		if (browser) {
-			localStorage.setItem('answers', JSON.stringify($state.snapshot(this.#answers)));
+			localStorage.setItem('answers', JSON.stringify(this.#answers));
 		}
 	}
 

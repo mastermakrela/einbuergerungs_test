@@ -1,4 +1,4 @@
-import questions from '$lib/nrw_questions.json';
+import questions from '#lib/nrw_questions.json';
 import type { EntryGenerator } from './$types';
 
 export const entries: EntryGenerator = () => {

@@ -1,10 +1,9 @@
 <!-- @migration-task Error while migrating Svelte code: Unexpected token
 https://svelte.dev/e/js_parse_error -->
 <script lang="ts">
-	import { enhance } from '$app/forms';
+	import { enhance, type SubmitFunction } from '$app/forms';
 	import { goto } from '$app/navigation';
-	import { base } from '$app/paths';
-	import type { SubmitFunction } from '@sveltejs/kit';
+	import { resolve } from '$app/paths';
 
 	let { data } = $props();
 
@@ -13,9 +12,16 @@ https://svelte.dev/e/js_parse_error -->
 
 		switch (action.search) {
 			case '?/collection':
-				return goto(base + '/fragen/' + formData.get('bundesland'));
+				return goto(
+					resolve('/fragen/[bundesland]', { bundesland: String(formData.get('bundesland')) })
+				);
 			case '?/quiz':
-				return goto(base + '/fragen/' + formData.get('bundesland') + '/1');
+				return goto(
+					resolve('/fragen/[bundesland]/[question_id]', {
+						bundesland: String(formData.get('bundesland')),
+						question_id: '1'
+					})
+				);
 		}
 	};
 </script>

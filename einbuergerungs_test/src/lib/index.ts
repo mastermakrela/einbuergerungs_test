@@ -1,4 +1,4 @@
-import questions from '$lib/nrw_questions.json';
+import questions from '#lib/nrw_questions.json';
 
 export function get_question(bundesland: string, question_id: string) {
 	return questions

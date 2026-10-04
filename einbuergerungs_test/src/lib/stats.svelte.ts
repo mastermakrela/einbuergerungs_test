@@ -1,4 +1,4 @@
-import { browser } from '$app/environment';
+import { browser } from '$app/env';
 
 class _Stats {
 	#answers: Record<string, { correct: boolean; lastUpdated: Date }>;

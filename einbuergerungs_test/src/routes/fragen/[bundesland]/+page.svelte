@@ -1,12 +1,18 @@
 <script lang="ts">
-	import { base } from '$app/paths';
-	import { Stats } from '$lib/stats.svelte';
+	import { resolve } from '$app/paths';
+	import { Stats } from '#lib/stats.svelte.js';
 
 	let { data } = $props();
 
 	let questions = $derived(data.questions);
 
 	let { correct, wrong } = $derived(Stats.summary(data.bundesland));
+
+	const question_href = (question_id: number) =>
+		resolve('/fragen/[bundesland]/[question_id]', {
+			bundesland: data.bundesland,
+			question_id: `${question_id}`
+		});
 </script>
 
 <article style="margin-top: 2rem; text-align: right;">
@@ -37,7 +43,7 @@
 					{question.id}
 					{#if question.image_url}🎆{/if}
 				</td>
-				<td><a href="{base}/fragen/{data.bundesland}/{idx + 1}">{question.question}</a></td>
+				<td><a href={question_href(idx + 1)}>{question.question}</a></td>
 				<td>
 					{#if _stats}
 						<small>

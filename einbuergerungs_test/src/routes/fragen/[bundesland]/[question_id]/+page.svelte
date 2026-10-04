@@ -1,8 +1,9 @@
 <!-- @migration-task Error while migrating Svelte code: Unexpected token
 https://svelte.dev/e/js_parse_error -->
 <script lang="ts">
-	import { base } from '$app/paths';
-	import { Stats } from '$lib/stats.svelte';
+	import { asset } from '$app/paths';
+	import type { AssetPath } from '$app/types';
+	import { Stats } from '#lib/stats.svelte.js';
 
 	let { data } = $props();
 
@@ -44,7 +45,7 @@ https://svelte.dev/e/js_parse_error -->
 	{#if question.image_url}
 		<div style="display: flex; justify-content: center; align-items: center;">
 			<img
-				src="{base}{question.image_url}"
+				src={asset(question.image_url.slice(1) as AssetPath)}
 				alt="TBA"
 				style="max-width: 256px; margin: 1rem auto;"
 			/>

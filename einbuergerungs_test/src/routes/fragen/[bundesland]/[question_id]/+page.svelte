@@ -46,7 +46,7 @@ https://svelte.dev/e/js_parse_error -->
 		<div style="display: flex; justify-content: center; align-items: center;">
 			<img
 				src={asset(question.image_url.slice(1) as AssetPath)}
-				alt="TBA"
+				alt="Abbildung zu Frage {question.id}"
 				style="max-width: 256px; margin: 1rem auto;"
 			/>
 		</div>
@@ -60,6 +60,7 @@ https://svelte.dev/e/js_parse_error -->
 				<!-- svelte-ignore a11y_role_supports_aria_props_implicit -->
 				<input
 					type="radio"
+					id="answer-{idx}"
 					name="answer"
 					value={idx}
 					checked={selected_answer === idx}
@@ -70,7 +71,7 @@ https://svelte.dev/e/js_parse_error -->
 					aria-invalid={show_correct ? !answer.correct : undefined}
 				/>
 				<label
-					for="answer"
+					for="answer-{idx}"
 					class:correct={show_correct && answer.correct}
 					class:wrong={show_correct && !answer.correct}
 				>

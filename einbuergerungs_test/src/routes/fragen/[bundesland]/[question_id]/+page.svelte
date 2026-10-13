@@ -15,11 +15,10 @@ https://svelte.dev/e/js_parse_error -->
 	let stats = $derived(Stats.getAnswer(data.bundesland, question.id));
 
 	function on_keypress(e: KeyboardEvent) {
-		const _keys = ['a', 's', 'd', 'f'];
+		const idx = ['a', 's', 'd', 'f'].indexOf(e.key.toLowerCase());
+		if (idx === -1) return;
 
-		selected_answer = _keys.indexOf(e.key.toLowerCase());
-		if (selected_answer === -1) selected_answer = undefined;
-
+		selected_answer = idx;
 		update_answer();
 	}
 

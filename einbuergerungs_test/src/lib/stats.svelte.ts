@@ -6,12 +6,16 @@ class _Stats {
 
 	constructor() {
 		if (browser) {
-			const storedAnswers = localStorage.getItem('answers');
-			if (storedAnswers) {
-				// JSON turns Dates into strings; turn them back so toLocaleString() formats them
-				this.#answers = JSON.parse(storedAnswers, (key, value) =>
-					key === 'lastUpdated' ? new Date(value) : value
-				);
+			try {
+				const storedAnswers = localStorage.getItem('answers');
+				if (storedAnswers) {
+					// JSON turns Dates into strings; turn them back so toLocaleString() formats them
+					this.#answers = JSON.parse(storedAnswers, (key, value) =>
+						key === 'lastUpdated' ? new Date(value) : value
+					);
+				}
+			} catch {
+				// unreadable stored value: start empty instead of breaking every page
 			}
 		}
 	}

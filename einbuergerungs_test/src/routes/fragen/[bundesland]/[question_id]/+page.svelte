@@ -1,5 +1,3 @@
-<!-- @migration-task Error while migrating Svelte code: Unexpected token
-https://svelte.dev/e/js_parse_error -->
 <script lang="ts">
 	import { asset } from '$app/paths';
 	import type { AssetPath } from '$app/types';
@@ -15,11 +13,10 @@ https://svelte.dev/e/js_parse_error -->
 	let stats = $derived(Stats.getAnswer(data.bundesland, question.id));
 
 	function on_keypress(e: KeyboardEvent) {
-		const _keys = ['a', 's', 'd', 'f'];
+		const idx = ['a', 's', 'd', 'f'].indexOf(e.key.toLowerCase());
+		if (idx === -1) return;
 
-		selected_answer = _keys.indexOf(e.key.toLowerCase());
-		if (selected_answer === -1) selected_answer = undefined;
-
+		selected_answer = idx;
 		update_answer();
 	}
 
@@ -46,7 +43,7 @@ https://svelte.dev/e/js_parse_error -->
 		<div style="display: flex; justify-content: center; align-items: center;">
 			<img
 				src={asset(question.image_url.slice(1) as AssetPath)}
-				alt="TBA"
+				alt="Abbildung zu Frage {question.id}"
 				style="max-width: 256px; margin: 1rem auto;"
 			/>
 		</div>
@@ -60,6 +57,7 @@ https://svelte.dev/e/js_parse_error -->
 				<!-- svelte-ignore a11y_role_supports_aria_props_implicit -->
 				<input
 					type="radio"
+					id="answer-{idx}"
 					name="answer"
 					value={idx}
 					checked={selected_answer === idx}
@@ -70,7 +68,7 @@ https://svelte.dev/e/js_parse_error -->
 					aria-invalid={show_correct ? !answer.correct : undefined}
 				/>
 				<label
-					for="answer"
+					for="answer-{idx}"
 					class:correct={show_correct && answer.correct}
 					class:wrong={show_correct && !answer.correct}
 				>
@@ -79,10 +77,6 @@ https://svelte.dev/e/js_parse_error -->
 				<kbd>{['A', 'S', 'D', 'F'][idx]}</kbd>
 			</div>
 		{/each}
-
-		<noscript>
-			<button type="submit" style="margin-top: 2rem;">Antworten</button>
-		</noscript>
 	</form>
 </section>
 
@@ -99,7 +93,7 @@ https://svelte.dev/e/js_parse_error -->
 	</small>
 {/if}
 
-<article style="margin-top: 1rem;" class="script">
+<article style="margin-top: 1rem;">
 	Du kannst die Antwort mit Tasten <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> oder <kbd>F</kbd> wählen.
 </article>
 

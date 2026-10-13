@@ -54,7 +54,8 @@ try {
 			const {
 				data: { text },
 			} = await ocr_worker.recognize(full_img_src);
-			const question = text.replace(/\n/g, "");
+			// join OCR lines with a space, or words glue together ("derPrüfung")
+			const question = text.replace(/\n/g, " ").trim();
 
 			// find first input with type radio and click it
 			const radio = await page.$("input[type='radio']");

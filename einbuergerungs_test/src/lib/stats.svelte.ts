@@ -1,18 +1,22 @@
 import { browser } from '$app/env';
 
 class _Stats {
-	#answers: Record<string, { correct: boolean; lastUpdated: Date }>;
+	// $state so pages that read answers update right after updateAnswer()
+	#answers = $state<Record<string, { correct: boolean; lastUpdated: Date }>>({});
 
 	constructor() {
 		if (browser) {
-			const storedAnswers = localStorage.getItem('answers');
-			if (storedAnswers) {
-				this.#answers = JSON.parse(storedAnswers);
-			} else {
-				this.#answers = {};
+			try {
+				const storedAnswers = localStorage.getItem('answers');
+				if (storedAnswers) {
+					// JSON turns Dates into strings; turn them back so toLocaleString() formats them
+					this.#answers = JSON.parse(storedAnswers, (key, value) =>
+						key === 'lastUpdated' ? new Date(value) : value
+					);
+				}
+			} catch {
+				// unreadable stored value: start empty instead of breaking every page
 			}
-		} else {
-			this.#answers = {};
 		}
 	}
 

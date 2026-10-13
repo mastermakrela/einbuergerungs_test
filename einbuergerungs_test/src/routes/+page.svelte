@@ -1,29 +1,10 @@
-<!-- @migration-task Error while migrating Svelte code: Unexpected token
-https://svelte.dev/e/js_parse_error -->
 <script lang="ts">
-	import { enhance, type SubmitFunction } from '$app/forms';
-	import { goto } from '$app/navigation';
 	import { resolve } from '$app/paths';
 
 	let { data } = $props();
 
-	const _enhance: SubmitFunction = async ({ formData, cancel, action }) => {
-		cancel();
-
-		switch (action.search) {
-			case '?/collection':
-				return goto(
-					resolve('/fragen/[bundesland]', { bundesland: String(formData.get('bundesland')) })
-				);
-			case '?/quiz':
-				return goto(
-					resolve('/fragen/[bundesland]/[question_id]', {
-						bundesland: String(formData.get('bundesland')),
-						question_id: '1'
-					})
-				);
-		}
-	};
+	let selected = $state<string>();
+	let bundesland = $derived(selected ?? data.bundeslands[0]);
 </script>
 
 <p>
@@ -38,18 +19,21 @@ https://svelte.dev/e/js_parse_error -->
 	Warum nur NRW?
 </p>
 
-<form method="post" use:enhance={_enhance}>
-	<h4>Wählen Sie zunächst bitte Ihr Bundesland:</h4>
+<h4>Wählen Sie zunächst bitte Ihr Bundesland:</h4>
 
-	<select name="bundesland">
-		{#each data.bundeslands as bundesland}
-			<option value={bundesland}>{bundesland}</option>
-		{/each}
-	</select>
+<select name="bundesland" bind:value={selected}>
+	{#each data.bundeslands as name}
+		<option value={name}>{name}</option>
+	{/each}
+</select>
 
-	<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem">
-		<button type="submit" formaction="?/collection">Zum Fragenkatalog</button>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem">
+	<a role="button" href={resolve('/fragen/[bundesland]', { bundesland })}>Zum Fragenkatalog</a>
 
-		<button type="submit" formaction="?/quiz">Zum Quiz</button>
-	</div>
-</form>
+	<a
+		role="button"
+		href={resolve('/fragen/[bundesland]/[question_id]', { bundesland, question_id: '1' })}
+	>
+		Zum Quiz
+	</a>
+</div>

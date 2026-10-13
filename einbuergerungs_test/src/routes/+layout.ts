@@ -1,5 +1,5 @@
 import questions from '#lib/nrw_questions.json';
-import type { LayoutServerLoad } from './$types';
+import type { LayoutLoad } from './$types';
 
 export const prerender = true;
 export const ssr = false;
@@ -21,4 +21,4 @@ export const load = (async () => {
 		bundeslands,
 		questions: _questions
 	};
-}) satisfies LayoutServerLoad;
+}) satisfies LayoutLoad;

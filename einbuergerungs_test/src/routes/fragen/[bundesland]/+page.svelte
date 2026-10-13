@@ -57,7 +57,7 @@
 				</td>
 				<td>
 					{#if _stats}
-						<small>{_stats.lastUpdated.toLocaleString()}</small>
+						<small>{_stats.lastUpdated.toLocaleString('de-DE')}</small>
 					{/if}
 				</td>
 			</tr>

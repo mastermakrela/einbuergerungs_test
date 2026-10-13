@@ -30,15 +30,6 @@
 	</div>
 </footer>
 
-<noscript>
-	<style>
-		kbd,
-		.script {
-			display: none;
-		}
-	</style>
-</noscript>
-
 <style>
 	main {
 		max-width: 1024px;

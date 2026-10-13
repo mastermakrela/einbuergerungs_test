@@ -1,7 +1,8 @@
 import { browser } from '$app/env';
 
 class _Stats {
-	#answers: Record<string, { correct: boolean; lastUpdated: Date }>;
+	// $state so pages that read answers update right after updateAnswer()
+	#answers = $state<Record<string, { correct: boolean; lastUpdated: Date }>>({});
 
 	constructor() {
 		if (browser) {
@@ -11,11 +12,7 @@ class _Stats {
 				this.#answers = JSON.parse(storedAnswers, (key, value) =>
 					key === 'lastUpdated' ? new Date(value) : value
 				);
-			} else {
-				this.#answers = {};
 			}
-		} else {
-			this.#answers = {};
 		}
 	}
 

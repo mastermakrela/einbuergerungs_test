@@ -7,7 +7,10 @@ class _Stats {
 		if (browser) {
 			const storedAnswers = localStorage.getItem('answers');
 			if (storedAnswers) {
-				this.#answers = JSON.parse(storedAnswers);
+				// JSON turns Dates into strings; turn them back so toLocaleString() formats them
+				this.#answers = JSON.parse(storedAnswers, (key, value) =>
+					key === 'lastUpdated' ? new Date(value) : value
+				);
 			} else {
 				this.#answers = {};
 			}

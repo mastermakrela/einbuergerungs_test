@@ -77,10 +77,6 @@
 				<kbd>{['A', 'S', 'D', 'F'][idx]}</kbd>
 			</div>
 		{/each}
-
-		<noscript>
-			<button type="submit" style="margin-top: 2rem;">Antworten</button>
-		</noscript>
 	</form>
 </section>
 
@@ -97,7 +93,7 @@
 	</small>
 {/if}
 
-<article style="margin-top: 1rem;" class="script">
+<article style="margin-top: 1rem;">
 	Du kannst die Antwort mit Tasten <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> oder <kbd>F</kbd> wählen.
 </article>
 

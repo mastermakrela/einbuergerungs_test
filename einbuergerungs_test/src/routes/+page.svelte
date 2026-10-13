@@ -1,5 +1,3 @@
-<!-- @migration-task Error while migrating Svelte code: Unexpected token
-https://svelte.dev/e/js_parse_error -->
 <script lang="ts">
 	import { enhance, type SubmitFunction } from '$app/forms';
 	import { goto } from '$app/navigation';

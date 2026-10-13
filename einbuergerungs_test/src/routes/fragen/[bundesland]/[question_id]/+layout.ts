@@ -14,11 +14,8 @@ export const load = (async ({ params, parent }) => {
 		error(404, 'Frage nicht gefunden');
 	}
 
-	// this is for SSR but now we deploy to GH pages
-	// const answer = parseInt(url.searchParams.get('answer') ?? '');
-
 	return {
 		question,
-		selected_answer: undefined as number | undefined // isNaN(answer) ? undefined : answer
+		selected_answer: undefined as number | undefined
 	};
 }) satisfies LayoutLoad;
